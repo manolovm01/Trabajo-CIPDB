@@ -1,0 +1,21 @@
+/* 1. Aplica la imagen de fondo a todo el cuerpo del documento */
+body {
+  background-image: url('bosque.jpg'); 
+  background-repeat: no-repeat; 
+  background-size: cover; 
+  background-attachment: fixed; 
+}
+
+/* 2. ***PASO CLAVE: DAR FONDO BLANCO AL CONTENIDO PRINCIPAL*** */
+/* Esto hace que el texto sea legible y el fondo del bosque solo se vea en los márgenes. */
+.container, .main-container {
+  /* Fondo blanco sólido o, mejor, blanco semi-transparente (rgba) */
+  background-color: rgba(255, 255, 255, 0.8); /* Blanco con 95% de opacidad */
+  
+  /* Añade un poco de sombra sutil para separarlo visualmente del fondo (opcional) */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
+  
+  /* Añade un poco de margen interno para que no quede pegado a los bordes */
+  padding-top: 20px; 
+  padding-bottom: 20px;
+}
